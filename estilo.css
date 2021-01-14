@@ -1,0 +1,393 @@
+body {
+    margin: 0px;
+    background-image: url(https://www.viajaconlaaurora.es/wp-content/uploads/2017/11/fondo-cesped.jpg);
+}
+
+/* BARRA DE NAVEGACIÓN */
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    padding: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 3px 3px 20px black;
+    position: sticky; /*PENDIENTE DE REVISAR*/
+}
+
+nav a {
+    padding: 0px 30px;
+    font-family: "Bungee Inline", cursive;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: grab;
+}
+
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: auto; /* MUEVO EL LOGO A LA IZQUIERDA */
+    margin-left: 5px;
+    width: 70px;
+}
+
+/* ENCABEZADO PRINCIPAL */
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0px 0px 50px;
+    color: whitesmoke;
+    font-family: "Bungee Shade", cursive;
+    font-size: 30px;
+
+    outline: solid 30px rgba(231, 245, 232, 0.534);
+}
+
+header h1 {
+    margin: 30px 0px 0px;
+    text-shadow: 5px 5px 10px black;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.jugadores {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* background-color: red; */
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: antiquewhite;
+    width: 200px;
+    padding: 3px 10px;
+    margin: 10px 30px;
+    box-shadow: 3px 3px 20px black;
+    /*BORDES REDONDEADOS EN LAS TARJETAS */
+    border-style: double;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.nombre {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-bottom: 3px solid black;
+    font-family: "Bungee Inline", cursive;
+}
+
+.foto {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    border-bottom: 3px solid black;
+    font-family: "Bungee Inline", cursive;
+}
+.foto img {
+    width: 160px;
+}
+
+.datos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.datos img {
+    width: 18px;
+    margin: 0px 10px;
+}
+
+/* RESULTADOS DEL PARTIDO */
+.goles {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.resultado {
+    display: flex;
+    color: whitesmoke;
+    font-family: "Bungee Shade", cursive;
+    font-size: 25px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.resultado h2 {
+    border-top: solid 30px rgba(231, 245, 232, 0.534);
+}
+
+.video {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* border: solid 30px  rgba(231, 245, 232, 0.534); */
+}
+
+.video iframe {
+    border: solid 30px rgba(231, 245, 232, 0.534);
+}
+
+/* JUEGO DE LAS PELOTAS */
+.juego {
+    display: flex;
+    flex-flow: row; /* REVEER SI USO WRAP o QUERIES */
+    background-color: rgba(0, 0, 0, 0.486);
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.izquierdo {
+    display: flex;
+    background-image: url(https://images.clipartlogo.com/files/istock/previews/8041/80418633-realistic-vertical-football-soccer-field-illustration.jpg);
+    background-size: cover;
+    width: 400px;
+    margin: 20px;
+    align-items: center;
+    font-family: "Bungee Inline", cursive;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.308);
+}
+
+.derecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 650px;
+    margin: 20px;
+}
+
+.infoball {
+    display: flex;
+    padding: 10px;
+    margin: 0px 10px;
+    font-family: monospace;
+}
+
+.infoball p {
+    text-align: center;
+}
+
+.ball {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.ball1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin: 0px 2rem;
+}
+
+.imgball {
+    width: 110px;
+}
+
+@media (max-width: 1100px) {
+    .juego {
+        display: flex;
+        flex-flow: row wrap; /* REVEER SI USO WRAP o QUERIES */
+        background-color: rgba(0, 0, 0, 0.486);
+        height: auto;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+    .izquierdo {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 95%;
+        height: 250px;
+    }
+    .derecho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+    }
+}
+
+@media (max-width: 700px) {
+    .juego {
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    .izquierdo {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 95%;
+        height: 200px;
+    }
+    .ball {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+
+/* GALERÍA DE IMAGENES */
+.galeria {
+    display: flex;
+    flex-direction: row; /* REVEER SI USO WRAP o media QUERIES */
+    background-color: rgba(0, 0, 0, 0.486);
+    height: auto;
+    margin: auto;
+    width: 85%;
+    padding: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+    margin: 10px;
+}
+
+.column img {
+    width: 98%;
+    border: 3px solid white;
+    margin: 10px 0px;
+    box-shadow: 3px 5px 5px black;
+}
+
+/* FORMULARIO */
+.contacto {
+    /* background-color: #333333; */
+    background-color: black;
+    margin-top: 2px;
+    padding-bottom: 30px;
+    font-family: "Bungee Inline", cursive;
+    color: white;
+}
+.form-contactame {
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+.form-contactame label {
+    font-size: large;
+    margin: 20px;
+}
+.form-contactame input {
+    width: 300px;
+    height: 30px;
+    margin: 20px;
+}
+.form-contactame button {
+    font-size: large;
+    background-color: rgb(34, 34, 255);
+    border: none;
+    border-radius: 10px;
+    width: 760px;
+    height: 40px;
+    margin-left: 122px;
+    margin-top: 20px;
+}
+.subtitulo {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: "Bungee Shade", cursive;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: orange; */
+    background-color: rgb(34, 34, 255);
+    height: 220px;
+    font-family: "Bungee Shade", cursive;
+    font-size: 35px;
+    color: wheat;
+}
+
+.footer div {
+    padding: 0px 20px;
+    width: 33%;
+}
+
+.footer div img {
+    width: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.footer div a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .galeria {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto;
+        margin: auto;
+        width: 85%;
+        padding: 20px;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 46%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin: 10px;
+    }
+    .column img {
+        width: 98%;
+        border: 3px solid white;
+        margin: 10px 0px;
+        box-shadow: 3px 5px 5px black;
+    }
+}
